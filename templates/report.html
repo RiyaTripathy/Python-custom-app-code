@@ -1,0 +1,19 @@
+{% extends 'material/base.html' %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+
+<div class="card-panel teal lighten-2"><span><h6>Report will be downloaded shortly..</h6></span></div>
+<form>
+    
+
+        <div class="container col s12 section" >
+
+        	<button class="btn-floating btn-large waved-effect waves light teal pulse" onclick="{{get_file()}}" > <i class="material-icons"> arrow_downward </i></button>
+      
+
+    </div>
+</form>
+  
+{% endblock %}

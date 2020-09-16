@@ -1,0 +1,68 @@
+{% extends 'material/base.html' %}
+
+{% block title %}Raw Form Example{% endblock %}
+
+{% block content %}
+
+<!--<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">-->
+
+<script src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+<div class="container col s12 section" >
+
+<div class="row">
+ <div class="col s12 m12"><div class="center-align card-panel teal lighten-2 "><span class="white-text"><h5> JEDI </h5></span></div></div></div>
+
+<div id="form-card">    
+    <form method="POST">
+        <div class="container col s12 section" >
+            
+
+
+
+            <div class ="section">
+                <label for="okta_tenant">First Name</label>
+                <input id="okta_tenant" name="first_name" type="text">
+            </div>
+            <div class="section">
+                <label for="APIToken">Last Name</label>
+                <input id="APIToken" name="last_name" type="text">
+            </div>
+            <div class="section">
+                <label for="email">email</label>
+                <input id="APIToken" name="email" type="text">
+            </div>
+            <div class="section">
+                <label for="login">login</label>
+                <input id="APIToken" name="login" type="text">
+            </div>
+            <div class="section">
+                <label for="mobile phone">Phone Number</label>
+                <input id="APIToken" name="mobile_phone" type="text">
+            </div>
+            <div class ="section">
+             <div class="input-field col s12">
+                    <select name="chosen_attr" class="browser-default">
+                      <option value="" disabled selected>Choose your Region</option>
+                      <option value="US">US</option>
+                      <option value="UK">UK</option>
+                      <option value="AP">Asia Pacific</option>
+                    </select>
+                    
+            </div>
+        </div>
+                 
+            
+
+
+            <br/>
+            <br/>
+            <input class="waves-effect waves-light btn" type="submit" value="Sumbit">
+
+    </div>
+    </form>
+
+</div>
+</div>
+
+{% endblock %}
